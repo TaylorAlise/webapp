@@ -3,14 +3,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Future Value Calculator</title>
     <link rel="stylesheet" href="assets/css/future-value.css">
 </head>
 <body>
     <main>
-        <h1>The Future Value Calculator</h1>
-        <script src="assets/js/future-value.js"></script>    
+        <h1>Future Value Calculator</h1>
+        <form action="display_results.php" method="post">
+            <div id = "data">
+                <label>Investment Amount:</label>
+                <input type="text" name="investment_amount"><br><br>
+                <label>Yearly Interest Rate:</label>
+                <input type="text" name="interest_rate"><br><br>
+                <label>Number of Years:</label>
+                <input type="text" name="number_years"><br><br>
+            </div>
+
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate">
+            </div>
+        </form>
     </main>
 </body>
 </html>
